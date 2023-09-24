@@ -21,6 +21,7 @@ const yearElement = document.querySelector('#year');
 // Use any viable method to get the profile image element
 const imageElement = document.querySelector('img');
 
+//Paso 4
 // Assign the nameElement's innerHTML property the fullName variable value
 // Surround the fullName value with <strong> tags using a template literal
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
@@ -36,6 +37,8 @@ imageElement.setAttribute('src', profilePicture);
 // and set its value using a template literal
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
+
+//Paso 5
 // Declare an array variable to hold your favorite foods
 const favFoods = ['Fried Chicken', 'Sushi', 'Chicken Makani', 'Burgers'];
 

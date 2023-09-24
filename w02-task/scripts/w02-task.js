@@ -29,6 +29,8 @@ foodElement.innerHTML = favFoods.join('<br>');
 const newFavoriteFood = 'Cheesecake';
 favFoods.push(newFavoriteFood);
 foodElement.innerHTML += `<br>${favFoods.join('<br>')}`;
+favFoods.shift();
+foodElement.innerHTML += `<br>${favFoods.join('<br>')}`;
 favFoods.pop();
 foodElement.innerHTML += `<br>${favFoods.join('<br>')}`;
 
