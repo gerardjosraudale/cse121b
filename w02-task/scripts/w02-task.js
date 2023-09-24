@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = 'Josue Raudales';
 const currentYear = new Date().getFullYear();
-const profilePicture = 'images/placeholder.png';
+const profilePicture = '/Users/joshraudales/GitHub/cse121b/w02-task/images/placeholder.png';
 
 
 
