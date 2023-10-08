@@ -8,7 +8,7 @@ let myProfile = {};
 myProfile.name = "Josue Raudales";
 
 // Add a 'photo' property with an image path and name
-myProfile.photo = "/Users/joshraudales/GitHub/CSE 121b/images/IMG_0039.JPG";
+myProfile.photo = "images/IMG_0039.JPG";
 
 // Add a 'favoriteFoods' property with an array of favorite foods
 myProfile.favoriteFoods = ["Butter Chicken", "Sushi", "Hamburguers", "3 Leches"];
