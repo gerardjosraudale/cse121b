@@ -1,25 +1,30 @@
+/* LESSON 3 - Programming Tasks */
+
+/* Profile Object  */
 // Declare an empty object named myProfile
 let myProfile = {};
 
 // Add a 'name' property with your name
-myProfile.name = "Your Name";
+myProfile.name = "Josue Raudales";
 
 // Add a 'photo' property with an image path and name
-myProfile.photo = "path/to/your/image.jpg";
+myProfile.photo = "/Users/joshraudales/GitHub/CSE 121b/images/IMG_0039.JPG";
 
 // Add a 'favoriteFoods' property with an array of favorite foods
-myProfile.favoriteFoods = ["Pizza", "Sushi", "Chocolate", "Ice Cream"];
+myProfile.favoriteFoods = ["Butter Chicken", "Sushi", "Hamburguers", "3 Leches"];
 
 // Add a 'hobbies' property with an array of hobbies
-myProfile.hobbies = ["Reading", "Hiking", "Painting", "Gaming"];
+myProfile.hobbies = ["Camping", "Hiking", "spending time with family", "cooking"];
 
+
+/* Populate Profile Object with placesLive objects */
 // Add an empty 'placesLived' array
 myProfile.placesLived = [];
 
 // Add an item to the 'placesLived' array
 myProfile.placesLived.push(
   {
-    place: 'San Francisco, CA',
+    place: '-Rexburg, ID',
     length: '1 year'
   }
 );
@@ -27,20 +32,24 @@ myProfile.placesLived.push(
 // Add additional objects to the 'placesLived' array for other places you have lived
 myProfile.placesLived.push(
   {
-    place: 'New York, NY',
-    length: '2 years'
+    place: '-Orem, Ut',
+    length: '10 years'
   }
 );
 
+/* DOM Manipulation - Output */
 // Assign the 'name' property to an HTML element with ID 'name'
 document.getElementById('name').textContent = myProfile.name;
 
+/* Photo with attributes */
 // Assign the 'photo' property as the 'src' attribute of an HTML <img> element with ID 'photo'
 document.getElementById('photo').src = myProfile.photo;
 
+/* Name */
 // Assign the 'name' property as the 'alt' attribute of the HTML <img> element with ID 'photo'
 document.getElementById('photo').alt = myProfile.name;
 
+/* Favorite Foods List*/
 // Iterate over 'favoriteFoods' and create an <li> element for each
 myProfile.favoriteFoods.forEach(food => {
   const li = document.createElement('li');
@@ -48,6 +57,7 @@ myProfile.favoriteFoods.forEach(food => {
   document.getElementById('favorite-foods').appendChild(li);
 });
 
+/* Hobbies List */
 // Repeat the process for 'hobbies'
 myProfile.hobbies.forEach(hobby => {
   const li = document.createElement('li');
@@ -55,6 +65,7 @@ myProfile.hobbies.forEach(hobby => {
   document.getElementById('hobbies').appendChild(li);
 });
 
+/* Places Lived DataList */
 // Iterate over 'placesLived' and create <dt> and <dd> elements for each
 myProfile.placesLived.forEach(place => {
   const dt = document.createElement('dt');
