@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display a welcome message
     const welcomeMessage = document.createElement('p');
-    welcomeMessage.textContent = 'Welcome to Meal Suggestion! Find delicious meal ideas below.';
+    welcomeMessage.textContent = 'Find delicious meal ideas below.';
     welcomeMessage.style.fontWeight = 'bold';
     document.body.insertBefore(welcomeMessage, document.getElementById('meal-form'));
 });
